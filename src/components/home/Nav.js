@@ -5,35 +5,23 @@ export default class Nav extends Component {
 
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <span className="navbar-brand mb-0 h1">React Landing Page</span>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                <li className="nav-item active">
-                    <a className="nav-link" href="#features">Features<span className="sr-only">(current)</span></a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#about">About</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#services">Services</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#gallery">Gallery</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#testimonials">Testimonials</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#team">Team</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#contact">Contact</a>
-                </li>
-                </ul>
-            </div>
+                <div className="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Navbar</span>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div className="navbar-nav">
+                            <a className="nav-link active" aria-current="page" href="#features">Features</a>
+                            <a className="nav-link" href="#about">About</a>
+                            <a className="nav-link" href="#services">Services</a>
+                            <a className="nav-link" href="#gallery">Gallery</a>
+                            <a className="nav-link" href="#testimonials">Testimonials</a>
+                            <a className="nav-link" href="#team">Team</a>
+                            <a className="nav-link" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         )
     }

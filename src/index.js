@@ -5,8 +5,7 @@ import  {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Home from './layouts/Home';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import "../node_modules/jquery/dist/jquery.min.js";
-import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 
 ReactDOM.render(
   <React.StrictMode>
