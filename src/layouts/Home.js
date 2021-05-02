@@ -1,11 +1,11 @@
 import React, {Component} from "react";
-import Nav from '../components/home/Nav'
+import Navigation from '../components/home/navigation'
 
 export default class Home extends Component {
     render() {
         return (
             <div>
-                <Nav/>
+                <Navigation/>
             </div>
         )
     }
