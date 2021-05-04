@@ -14,6 +14,8 @@ Demo: https://react-landing-page-template.herokuapp.com/ Based on: https://www.f
 # Components - References
 ## Frontend
 React Bootstrap -> https://react-bootstrap.github.io/
+Font Awesome 5.15.3 -> https://fontawesome.com/
+- Font Awesome with React -> https://www.digitalocean.com/community/tutorials/how-to-use-font-awesome-5-with-react-pt
 
 ## Backend
 

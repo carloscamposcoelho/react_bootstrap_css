@@ -7,13 +7,16 @@ import Home from './layouts/Home';
 import "./assets/css/style.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+// import your fontawesome library
+import './fontawesome';
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
         <Route path="/" component={Home} />
       </Switch>
-    </BrowserRouter>,
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
