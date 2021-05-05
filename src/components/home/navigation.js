@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link } from "react-scroll";
 
 export default function Navigation() {
     return (
@@ -16,39 +17,14 @@ export default function Navigation() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Item>
-                            <Nav.Link href="#features">
+                            <Link activeClass="active" to="features" spy={true} smooth={true} offset={-70} duration={500}>
                                 Features
-                            </Nav.Link>
+                            </Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="#about">
-                                About
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#services">
-                                Services
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#gallery">
-                                Gallery
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#testimonials">
-                                Testimonials
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#team">
-                                Team
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#contact">
-                                Contact
-                            </Nav.Link>
+                            <Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>
+                            About
+                            </Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
