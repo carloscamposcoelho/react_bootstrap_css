@@ -2,14 +2,16 @@ import React, {Component} from "react";
 import Navigation from "../components/home/navigation"
 import Intro from "../components/home/intro"
 import Features from "../components/home/features";
+import About from "../components/home/about";
 
 export default class Home extends Component {
     render() {
         return (
-            <div className="home">
+            <div id="home">
                 <Navigation/>
                 <Intro/>
                 <Features/>
+                <About/>
             </div>
         )
     }

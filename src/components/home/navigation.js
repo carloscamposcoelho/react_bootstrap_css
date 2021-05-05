@@ -17,13 +17,13 @@ export default function Navigation() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Item>
-                            <Link activeClass="active" to="features" spy={true} smooth={true} offset={-70} duration={500}>
+                            <Link activeClass="active" to="features" spy={true} smooth={true} duration={500}>
                                 Features
                             </Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>
-                            About
+                                About
                             </Link>
                         </Nav.Item>
                     </Nav>
