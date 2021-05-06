@@ -26,6 +26,11 @@ export default function Navigation() {
                                 About
                             </Link>
                         </Nav.Item>
+                        <Nav.Item>
+                            <Link activeClass="active" to="services" spy={true} smooth={true} offset={-70} duration={500}>
+                                Services
+                            </Link>
+                        </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
