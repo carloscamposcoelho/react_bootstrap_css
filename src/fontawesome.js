@@ -12,7 +12,8 @@ import {
   faCloudDownloadAlt,
   faLanguage,
   faPlane,
-  faChartPie
+  faChartPie,
+  faSearchPlus
  } from '@fortawesome/free-solid-svg-icons';
 import { faWordpress } from '@fortawesome/free-brands-svg-icons';
 
@@ -27,6 +28,7 @@ library.add(
     faCloudDownloadAlt,
     faLanguage,
     faPlane,
-    faChartPie
+    faChartPie,
+    faSearchPlus
   // more icons go here
 );
