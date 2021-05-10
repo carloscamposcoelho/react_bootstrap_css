@@ -2,24 +2,23 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function importAll(r) {
-    let images = {};
-    r.keys().forEach((item) => { images[item.replace('./', '')] = r(item); });
-    return Object.entries(images).map(i => ({name: i[0], src: i[1].default}) );
-}
-
-const images = importAll(require.context("../../assets/img/gallery/small", false, /\.(png|jpe?g|svg)$/));
-
-export default class Gallery extends React.Component {
-    constructor(props) {
-        super(props);
+export default function Gallery() {
+    function readImagesFromFolder(folderPath) {
+        let images = {};
+        let imageList = [];
+        let req = require.context("../../assets/img/gallery/small", false, /\.(png|jpe?g|svg)$/);
     
-        this.mountGalleryImages = this.mountGalleryImages.bind(this);
+        req.keys().forEach((item) => { images[item.replace('./', '')] = req(item); });
+        imageList = Object.entries(images).map(i => ({name: i[0], src: i[1].default}) )
+    
+        return imageList;
     }
 
-    mountGalleryImages() {
+    function mountGalleryImagesRow() {
+        let images = readImagesFromFolder();
+        
         return (
-            <>
+            <Row>
                 {images.map((image, index) => (
                     <Col key={index} sm={6} md={4} lg={4} className="gallery-item">
                         <div className="hover-bg">
@@ -32,23 +31,20 @@ export default class Gallery extends React.Component {
                         </div>
                     </Col>
                 ))}
-            </>
+            </Row>
         )
     }
 
-    render() {
-        return (
-            <Container id="gallery">
+    return (
+        <Container id="gallery">
             <Row>
                 <Col className="section-title">
                     <h2>Gallery</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
                 </Col>
             </Row>
-            <Row>
-                {this.mountGalleryImages()}
-            </Row>
+            {mountGalleryImagesRow()}
         </Container>
-        );
-    }
+    )
+
 }
