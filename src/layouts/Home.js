@@ -5,6 +5,7 @@ import Features from "../components/home/features";
 import About from "../components/home/about";
 import Services from "../components/home/services";
 import Gallery from "../components/home/gallery";
+import Testimonials from "../components/home/testimonials";
 
 export default class Home extends Component {
     render() {
@@ -16,6 +17,7 @@ export default class Home extends Component {
                 <About/>
                 <Services/>
                 <Gallery/>
+                <Testimonials/>
             </div>
         )
     }
