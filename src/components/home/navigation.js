@@ -6,7 +6,7 @@ export default function Navigation() {
     return (
         <Navbar id="menu" bg="light" expand="lg" sticky="top">
             <Container>
-                <div className="d-flex justify-content-center align-items-center ml-2 ml-lg-0">
+                <div className="d-flex justify-content-center align-items-center">
                     <Navbar.Brand>
                         React Landing Page
                     </Navbar.Brand>
@@ -29,6 +29,11 @@ export default function Navigation() {
                         <Nav.Item>
                             <Link activeClass="active" to="services" spy={true} smooth={true} offset={-70} duration={500}>
                                 Services
+                            </Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Link activeClass="active" to="gallery" spy={true} smooth={true} offset={-70} duration={500}>
+                                Gallery
                             </Link>
                         </Nav.Item>
                     </Nav>

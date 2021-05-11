@@ -7,7 +7,7 @@ export default function Intro () {
             <div className="overlay">
                 <Container>
                     <Row>
-                        <Col md={{ span: 8, offset: 2}} className="intro-text">
+                        <Col className="intro-text">
                             <h1>We are a landing page</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum</p>
                             <Button variant="primary" href="#features">Learn More</Button>

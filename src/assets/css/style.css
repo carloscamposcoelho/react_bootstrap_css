@@ -113,7 +113,7 @@
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
-	font-size: 82px;
+	font-size: 72px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 0;
@@ -191,7 +191,7 @@
 	font-weight: 600;
 }
 #about img {
-	width: 520px;
+	width: 100%;
 	margin-top: 10px;
 	background: #fff;
 	border-right: 0;
@@ -324,3 +324,32 @@
 .section-title p {
 	font-size: 18px;
 }
+
+/* Responsive media query */
+/* Bootstrap col-md 768px ~ 991px */
+@media only screen and (max-width: 991px) {
+	#about .about-text {
+		padding-top: 15px;
+	  }
+}
+/* Bootstrap col-sm 576px ~ 767px */
+@media only screen and (max-width: 767px) {
+	#about .about-text {
+	  text-align: center;
+	}
+	#about .about-text ul {
+		text-align: left;
+	}
+	#about h2::after {
+		margin-left: -30px;
+		left: 50%;
+	}
+}
+/* Bootstrap col-xs < 576px */
+@media only screen and (max-width: 575px) {
+	#about .about-text ul {
+		text-align: center;
+	}
+}
+
+/* Responsive media query -END */

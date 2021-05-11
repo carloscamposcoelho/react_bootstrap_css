@@ -24,17 +24,17 @@ export default function About() {
     return (
         <Container id="about">
             <Row>
-                <Col>
+                <Col md={12} lg={6}>
                     <img src={AboutImg} alt="" />
                 </Col>
-                <Col className="about-text">
+                <Col md={12} lg={6} className="about-text">
                     <h2>About us</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <Row>
-                        <Col md="12">
+                        <Col md={12}>
                             <h3>Why Choose Us?</h3>
                         </Col>
-                        <Col>
+                        <Col xs={12} sm={6}>
                             {styleList([
                                 {id:1, text:"Lorem ipsum dolor"},
                                 {id:2, text:"Tempor incididunt"},
@@ -42,7 +42,7 @@ export default function About() {
                                 {id:4, text:"Incididunt ut labore"}
                             ])}
                         </Col>
-                        <Col>
+                        <Col xs={12} sm={6}>
                             {styleList([
                                 {id:5, text:"Aliquip ex ea commodo"},
                                 {id:6, text:"Lorem ipsum dolor"},
