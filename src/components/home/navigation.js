@@ -41,6 +41,11 @@ export default function Navigation() {
                                 Testimonials
                             </Link>
                         </Nav.Item>
+                        <Nav.Item>
+                            <Link activeClass="active" to="team" spy={true} smooth={true} offset={-70} duration={500}>
+                                Team
+                            </Link>
+                        </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
