@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Header } from "./";
 
 export default function Features () {
 
@@ -9,8 +10,8 @@ export default function Features () {
             <Container>
                 <Row>
                     <Col>
-                        <div className="section-title">
-                            <h2>Features</h2>
+                        <div>
+                            <Header title="Features" />
                         </div>
                     </Col>
                 </Row>

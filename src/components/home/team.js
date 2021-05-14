@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Header } from "./";
 
 export default function Team(props) {
 
@@ -7,9 +8,8 @@ export default function Team(props) {
         <div id="team">
             <Container>
                 <Row>
-                    <Col className="section-title">
-                        <h2>Meet the team</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec</p>
+                    <Col>
+                        <Header title="Meet the team" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec" />
                     </Col>
                 </Row>
                 <Row>

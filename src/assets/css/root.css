@@ -1,0 +1,8 @@
+:root {
+  --underline-title: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  --p-font-size: 18px;
+  --title-dark: #333;
+  --title-light: #fff;
+  --h-font-family: "Raleway", sans-serif;
+  --p-font-size: 15px;
+}

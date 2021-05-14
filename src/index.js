@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './layouts/Home';
 
 import "./assets/css/style.css";
+import "./assets/css/root.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 // import your fontawesome library
