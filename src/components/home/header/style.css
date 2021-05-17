@@ -1,29 +1,86 @@
-.section-title {
-  margin-bottom: 70px;
+:root {
+  --after-position: absolute;
+  --after-content: "";
+  --after-height: 4px;
+  --after-width: 60px;
+  --after-bottom: 0;
+  --hd-position: relative;
+  --hd-padding-bottom: 15px;
+  --hd-text-transform: uppercase;
+  --hd-margin: 10px 20px 15px 0px;
+  --hd-font-weight: 800px;
+  --hd-font-size: 36px;
+  --hd-margin-bottom: 70px;
 }
-.section-title h1 {
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 0 20px 0;
-  font-weight: 800;
-  font-size: 36px;
-  color: var(--title-dark);
+
+/* Center align Header */
+.center {
+  margin-bottom: var(--hd-margin-bottom);
 }
-.section-title h1::after {
-  position: absolute;
-  content: "";
-  background: var(--underline-title);
-  height: 4px;
-  width: 60px;
-  bottom: 0;
+.center h1::after {
+  position: var(--after-position);
+  content: var(--after-content);
+  height: var(--after-height);
+  width: var(--after-width);
+  bottom: var(--after-bottom);
   margin-left: -30px;
   left: 50%;
 }
-.section-title p {
-  font-size: var(--p-font-size);
+.center h1 {
+  position: var(--hd-position);
+  padding-bottom: var(--hd-padding-bottom);
+  text-transform: var(--hd-text-transform);
+  margin: var(--hd-margin);
+  font-weight: var(--hd-font-weight);
+  font-size: var(--hd-font-size);
   text-align: center;
+}
+.center p {
+  text-align: center;
+  font-size: var(--p-font-size);
+}
+
+/* Left align Header */
+.left h1::after {
+  position: var(--after-position);
+  content: var(--after-content);
+  height: var(--after-height);
+  width: var(--after-width);
+  bottom: var(--after-bottom);
+  left: 0;
+}
+.left h1 {
+  position: var(--hd-position);
+  padding-bottom: var(--hd-padding-bottom);
+  text-transform: var(--hd-text-transform);
+  margin: var(--hd-margin);
+  font-weight: var(--hd-font-weight);
+  font-size: var(--hd-font-size);
+  text-align: left;
+}
+.left p {
+  text-align: left;
+  font-size: var(--p-font-size);
+}
+
+/* Dark Header */
+.dark h1 {
+  color: var(--title-dark);
+}
+.dark h1::after {
+  background: var(--underline-title-dark);
+}
+.dark p {
+  color: var(--p-font-color-dark);
+}
+
+/* Light Header */
+.light h1 {
+  color: var(--title-light);
+}
+.light h1::after {
+  background: var(--underline-title-light);
+}
+.light p {
+  color: var(--title-light);
 }

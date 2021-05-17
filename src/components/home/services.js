@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Header } from "./";
 
 export default function Services() {
 
@@ -9,12 +10,7 @@ export default function Services() {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Our Services</h2>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+                        <Header title="Our Services" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec." theme="light" />
                     </Col>
                 </Row>
                 <Row>
