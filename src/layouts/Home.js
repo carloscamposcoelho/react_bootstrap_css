@@ -7,7 +7,7 @@ import Services from "../components/home/services";
 import Gallery from "../components/home/gallery";
 import Testimonials from "../components/home/testimonials";
 import Team from "../components/home/team";
-import Contact from "../components/home/contact";
+import Contact from "../components/home/contact/contact";
 
 export default function Home() {
     let teamMembers = [

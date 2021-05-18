@@ -1,11 +1,9 @@
 :root {
-  --underline-title-dark: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  --underline-title-light: linear-gradient(to right, #ffffff 0%,  #d4d4d4 100%);
-  --p-font-size: 18px;
-  --title-dark: #333;
-  --title-light: #fff;
-  --h-font-family: "Raleway", sans-serif;
+  --color-bg-gradient-dark: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  --color-bg-gradient-light: linear-gradient(to right, #ffffff 0%,  #d4d4d4 100%);
   --p-font-size: 15px;
-  --p-font-color-dark: #777;
-  --p-font-color-light: #fff;
+  --color-txt-dark: #333;
+  --color-txt-true: #777;
+  --color-txt-light: #fff;
+  --h-font-family: "Raleway", sans-serif;
 }

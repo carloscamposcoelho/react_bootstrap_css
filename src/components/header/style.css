@@ -65,22 +65,22 @@
 
 /* Dark Header */
 .dark h1 {
-  color: var(--title-dark);
+  color: var(--color-txt-dark);
 }
 .dark h1::after {
-  background: var(--underline-title-dark);
+  background: var(--color-bg-gradient-dark);
 }
 .dark p {
-  color: var(--p-font-color-dark);
+  color: var(--color-txt-true);
 }
 
 /* Light Header */
 .light h1 {
-  color: var(--title-light);
+  color: var(--color-txt-light);
 }
 .light h1::after {
-  background: var(--underline-title-light);
+  background: var(--color-bg-gradient-light);
 }
 .light p {
-  color: var(--title-light);
+  color: var(--color-txt-light);
 }
