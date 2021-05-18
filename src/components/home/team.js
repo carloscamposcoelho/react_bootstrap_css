@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Header } from "./";
+import { Header } from "../";
 
 export default function Team(props) {
 

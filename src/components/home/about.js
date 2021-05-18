@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AboutImg from "../../assets/img/about.jpg";
-import { Header } from "./"
+import { Header } from "../"
 
 
 export default function About() {

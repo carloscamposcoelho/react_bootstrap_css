@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Header } from "./";
+import { Header } from "../";
 import PicRobert from "../../assets/img/testimonials/01.jpg";
 import PicDiego from "../../assets/img/testimonials/02.jpg";
 import PicKevin from "../../assets/img/testimonials/03.jpg";

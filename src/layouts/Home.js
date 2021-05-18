@@ -7,7 +7,7 @@ import Services from "../components/home/services";
 import Gallery from "../components/home/gallery";
 import Testimonials from "../components/home/testimonials";
 import Team from "../components/home/team";
-import { ContactMessage } from "../components/home";
+import Contact from "../components/home/contact";
 
 export default function Home() {
     let teamMembers = [
@@ -43,7 +43,7 @@ export default function Home() {
             <Gallery />
             <Testimonials />
             <Team members={teamMembers}></Team>
-            <ContactMessage title="Get in touch" description="Please fill out the form below to send us an email and we will get back to you as soon as possible" />
+            <Contact />
         </div>
     )
 }
