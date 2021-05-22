@@ -27,7 +27,7 @@ export default function ContactBox() {
         </Row>
         <Row>
           <Col>
-            <input type="submit" />
+            <input className="btn btn-primary" type="submit" />
           </Col>
         </Row>
       </form>

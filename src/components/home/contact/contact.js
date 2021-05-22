@@ -1,35 +1,14 @@
 import React from "react";
 import { ContactBox, Header, ContactInfo } from "../../";
 import { Container, Row, Col } from "react-bootstrap";
-import "./style.css";
+import { StyledContact } from "./styles";
 
 export default function Contact() {
-    function getContacts() {
-        let contactTypes = [
-            { 
-                label: "Address",
-                value: "4321 California St, San Francisco, CA 12345",
-                icon: "map-marker-alt"
-            },
-            { 
-                label: "Phone",
-                value: "+1 123 456 1234",
-                icon: "phone"
-            },
-            { 
-                label: "Email",
-                value: "info@company.com",
-                icon: "phone"
-            }
-        ]
-
-        return contactTypes;
-    }
 
     return (
-        <div className="contact">
+        <StyledContact>
             <Container>
-                <Row>
+                <Row className="title">
                     <Col>
                         <Header
                             title="Get in touch"
@@ -44,11 +23,14 @@ export default function Contact() {
                         <ContactBox />
                     </Col>
                     <Col md={{ span: 4, offset: 1 }}>
-                        <ContactInfo contactTypes={getContacts()}
+                        <ContactInfo
+                            address="4321 California St, San Francisco, CA 12345"
+                            phone="+1 123 456 1234"
+                            email="info@company.com"
                          />
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </StyledContact>
     )
 }
