@@ -10,11 +10,6 @@
 h1, h2, h3, h4 {
 	font-family: var(--h-font-family);
 }
-#home h3 {
-	font-size: 20px;
-	font-weight: 600;
-	color: #333;
-}
 #home h4 {
 	font-size: 18px;
 	color: #333;

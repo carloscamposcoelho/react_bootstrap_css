@@ -1,24 +1,36 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { Row, Col } from "react-bootstrap";
+import { StyledContactBox } from "./styles";
 
-export default function ContactBox({ title, description }) {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
 
-    console.log(watch("example")); // watch input value by passing the name of it
+export default function ContactBox() {
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const onSubmit = data => console.log(data);
+  console.log(errors);
 
-    return (
-        /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-        <form onSubmit={handleSubmit(onSubmit)}>
-        {/* register your input into the hook by invoking the "register" function */}
-        <input defaultValue="test" {...register("example")} />
-        
-        {/* include validation with required or other standard HTML validation rules */}
-        <input {...register("exampleRequired", { required: true })} />
-        {/* errors will return when field validation fails  */}
-        {errors.exampleRequired && <span>This field is required</span>}
-        
-        <input type="submit" />
-        </form>
-    )
+  return (
+    <StyledContactBox>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <Row>
+          <Col>
+            <input type="text" className="form-control" placeholder="Name" {...register("Name", { required: true, maxLength: 80 })} />
+          </Col>
+          <Col>
+            <input type="text" className="form-control" placeholder="Email" {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <textarea className="form-control"  placeholder="Massage" rows="4" {...register("Message", {})} />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <input type="submit" />
+          </Col>
+        </Row>
+      </form>
+    </StyledContactBox>
+  )
 }
