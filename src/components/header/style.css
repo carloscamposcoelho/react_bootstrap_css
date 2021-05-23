@@ -41,6 +41,9 @@
 }
 
 /* Left align Header */
+.left {
+  margin-bottom: 20px;
+}
 .left h1::after {
   position: var(--after-position);
   content: var(--after-content);
