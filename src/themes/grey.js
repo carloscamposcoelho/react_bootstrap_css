@@ -1,7 +1,7 @@
-const theme = {
+const greyTheme = {
     background: {
         color: {
-            dark: 'var(--color-bg-gradient-dark)',
+            dark: '#777',
             light: 'var(--color-bg-gradient-light)'
         }
     },
@@ -20,4 +20,4 @@ const theme = {
         padding: 'var(--section-padding)'
     },
 }
-export { theme }
+export { greyTheme }

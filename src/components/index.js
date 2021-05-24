@@ -1,11 +1,11 @@
 import ContactBox from './contact-box';
 import ContactInfo from './contact-info';
 import Header from './header/header';
-import Section from './section';
+import SectionDark from './section/section-dark';
 
 export {
     ContactBox,
     ContactInfo,
     Header,
-    Section,
+    SectionDark,
 };

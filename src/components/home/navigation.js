@@ -46,6 +46,11 @@ export default function Navigation() {
                                 Team
                             </Link>
                         </Nav.Item>
+                        <Nav.Item>
+                            <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500}>
+                                Contact
+                            </Link>
+                        </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

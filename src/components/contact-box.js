@@ -3,10 +3,12 @@ import { useForm } from "react-hook-form";
 import { Row, Col } from "react-bootstrap";
 import styled from "styled-components";
 
+/* Styles */
 const StyledRow = styled(Row)`
     margin-bottom: 10px;
 `;
 
+/* Functions */
 export default function ContactBox() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
