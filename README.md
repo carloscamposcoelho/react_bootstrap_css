@@ -1,3 +1,5 @@
+[![Azure Static Web Apps CI/CD](https://github.com/carloscamposcoelho/react_bootstrap_css/actions/workflows/azure-static-web-apps-delightful-dune-00a39fe1e.yml/badge.svg?branch=main)](https://github.com/carloscamposcoelho/react_bootstrap_css/actions/workflows/azure-static-web-apps-delightful-dune-00a39fe1e.yml)
+
 # react_bootstrap_css
 React application using bootstrap and CSS
 
